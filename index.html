@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost2Go</title>
+    <link rel="icon" href="img/fuel_icon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=NEW_PLACEHOLDER_KEY&libraries=places&loading=async"
+      async
+      defer
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">COST<span>2</span>GO</a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="img/menu.svg"
+          alt="open navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="img/exit.svg"
+            alt=""
+          />
+        </nav>
+      </div>
+    </div>
+
+    <section class="calc-section">
+      <div class="container">
+        <div class="calc-left">
+          <h2>Input your details here:</h2>
+
+          <form id="calc-form">
+            <div>
+              <label for="Manual">Manually</label>
+              <input type="radio" id="manual" name="manualAuto" checked />
+            </div>
+
+            <div>
+              <label for="auto">We'll calculate for you!</label>
+              <input type="radio" id="auto" name="manualAuto" />
+            </div>
+
+            <label for="start-location" class="start"
+              >Start Location (Optional)</label
+            >
+            <input
+              type="text"
+              name="start-location"
+              id="start-location"
+              class="start"
+              placeholder="e.g. Scunthorpe"
+            />
+
+            <label for="end-location" class="end"
+              >End Location (Optional)</label
+            >
+            <input
+              type="text"
+              name="end-location"
+              id="end-location"
+              class="end"
+              placeholder="e.g. Grimsby"
+            />
+
+            <label for="distance">Distance (Miles)</label>
+            <input
+              type="text"
+              name="distance"
+              id="distance"
+              placeholder="e.g. 100"
+            />
+
+            <label for="consumption">Fuel Consumption (MPG)</label>
+            <input
+              type="text"
+              name="consumption"
+              id="consumption"
+              placeholder="e.g. 40"
+            />
+
+            <label for="fuel-cost">Cost per liter (Pence)</label>
+            <input
+              type="text"
+              name="fuel-cost"
+              id="fuel-cost"
+              placeholder="e.g. 130.9"
+            />
+
+            <input
+              type="submit"
+              id="submit"
+              class="calculate-cta"
+              value="Calculate"
+            />
+          </form>
+        </div>
+        <div class="calc-right">
+          <h2 class="costMessage"></h2>
+          <h2 class="price"></h2>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
