@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const distance = document.getElementById("distance");
     distance.readOnly = false;
     distance.value = "";
+    distance.style.color = "#000";
 
     decision = false;
   });
