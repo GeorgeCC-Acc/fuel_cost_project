@@ -58,7 +58,7 @@ h2 {
     vertical-align: middle; // aligns with label text
     width: 1em; // consistent size
     height: 1em;
-    accent-color: #2a9d8f; // optional: custom color
+    accent-color: var(--primary-color); // optional: custom color
   }
 
   label {

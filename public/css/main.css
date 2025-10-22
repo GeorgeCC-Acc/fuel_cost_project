@@ -54,7 +54,7 @@ h2 {
   vertical-align: middle;
   width: 1em;
   height: 1em;
-  accent-color: #2a9d8f;
+  accent-color: var(--primary-color);
 }
 .option label {
   margin: 0;
