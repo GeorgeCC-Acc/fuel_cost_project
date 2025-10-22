@@ -47,6 +47,27 @@ h2 {
   font-size: 2em;
 }
 
+.option {
+  display: flex;
+  align-items: center; // vertically centers radio and label
+  gap: 0.5rem; // space between radio and label
+  margin-bottom: 1rem;
+
+  input[type="radio"] {
+    margin: 0; // remove default spacing
+    vertical-align: middle; // aligns with label text
+    width: 1em; // consistent size
+    height: 1em;
+    accent-color: #2a9d8f; // optional: custom color
+  }
+
+  label {
+    margin: 0; // remove default margin
+    line-height: 1; // match input height for perfect alignment
+    cursor: pointer;
+  }
+}
+
 label {
   display: block;
   font-size: 1.2em;

@@ -43,6 +43,25 @@ h2 {
   font-size: 2em;
 }
 
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.option input[type=radio] {
+  margin: 0;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  accent-color: #2a9d8f;
+}
+.option label {
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
 label {
   display: block;
   font-size: 1.2em;
