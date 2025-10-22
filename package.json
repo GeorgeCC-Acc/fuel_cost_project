@@ -2,7 +2,7 @@
   "name": "fuel_cost_project",
   "version": "1.0.0",
   "description": "A fuel cost calculator made using only front end development. HTML, CSS/SASS, JavaScript",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
