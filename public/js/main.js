@@ -1,3 +1,27 @@
+async function loadGoogleMaps() {
+  try {
+    const res = await fetch("/maps-key");
+    const data = await res.json();
+
+    const script = document.createElement("script");
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${data.key}&libraries=places`;
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Wait for the script to finish loading
+    await new Promise((resolve, reject) => {
+      script.onload = resolve;
+      script.onerror = reject;
+    });
+
+    console.log("Google Maps API loaded successfully");
+  } catch (err) {
+    console.error("Failed to load Google Maps:", err);
+  }
+}
+
+loadGoogleMaps();
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("calc-form");
   const output = document.querySelector(".price");
